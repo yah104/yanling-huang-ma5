@@ -7,7 +7,6 @@ export default function Grid() {
     const colorsArray = ["white", "white", "white", "white"];
     const [backColor, setBackColor] = useState(colorsArray);
     console.log("lalala " + backColor);
-    // const [selected, setSelected] = useState(false);
     const [count, setCount] = useState(0);
 
     function changeStatus(index) {
@@ -21,8 +20,6 @@ export default function Grid() {
             setBackColor(newArr);
             setCount(count - 1);
         }
-
-        // setSelected(true);
     }
 
     return (
